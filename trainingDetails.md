@@ -72,4 +72,4 @@ The following arguments are available for configuring the SRGAN training script:
 ## Usage Example
 
 ```bash
-python train_srg_model.py --lr_dir data/lr --hr_dir data/hr --batch_size 16 --crop_size 24 --augment True --epochs 50 --lr_g 0.0001 --lr_d 0.0001 --content_weight 0.006 --adversarial_weight 0.001 --generator_path models/generator.pth --discriminator_path models/discriminator.pth --checkpoint_name model_weights/SRGAN_train
+python train.py --lr_dir data/lr --hr_dir data/hr --batch_size 16 --crop_size 24 --augment True --epochs 50 --lr_g 0.0001 --lr_d 0.0001 --content_weight 0.006 --adversarial_weight 0.001 --generator_path models/generator.pth --discriminator_path models/discriminator.pth --checkpoint_name model_weights/SRGAN_train
