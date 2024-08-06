@@ -6,3 +6,6 @@ outputs/
 other pth/
 *.pdf
 SRGAN.ipynb
+TestingPhoto/
+training_photo_one_batch/
+TrainingPhoto/
