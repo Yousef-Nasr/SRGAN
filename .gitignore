@@ -1,11 +1,10 @@
 *.pyc
 __pycache__/
 model parameters/
-inputs/
-outputs/
 other pth/
 *.pdf
 SRGAN.ipynb
 TestingPhoto/
 training_photo_one_batch/
 TrainingPhoto/
+photo/

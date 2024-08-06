@@ -1,0 +1,22 @@
+# Data-related settings
+data:
+  lr_dir: "data/lr"  # Path to low resolution images
+  hr_dir: "data/hr"  # Path to high resolution images
+  batch_size: 16     # Number of images per batch
+  crop_size: 24      # Size of the crop from low-res images to train on it
+  augment: false     # Whether to apply data augmentation (rotation, flipping)
+
+# Training-related settings
+training:
+  epochs: 50                     # Number of training epochs
+  optimizer: "Adam"
+  lr_g: 0.0001                   # Learning rate for the generator
+  lr_d: 0.0001                   # Learning rate for the discriminator
+  content_weight: 0.006          # Weight for the content loss
+  adversarial_weight: 0.001      # Weight for the adversarial loss
+  checkpoint_name: "model_weights/SRGAN_train"  # Path to save the model checkpoints
+
+# Model-related settings
+model:
+  generator_path: null          # Path to the pre-trained generator model
+  discriminator_path: null      # Path to the pre-trained discriminator model
