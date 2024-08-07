@@ -75,8 +75,15 @@ all the images in the inputs folder passed through the model and the generated i
     
 ```bash
 python inference.py --model_path model.pth --image_path inputs/
---save_path outputs/
+--save_path outputs/ --device cuda
 ```
+> `--model_path` is the path to the pre-trained model.
+
+> `--image_path` is the path to the input images.
+
+> `--save_path` is the path to save the generated images.
+
+> `--device` can be either 'cuda' or 'cpu' depending on the available resources.
 
 ## TODO
 - [ ] Train the model for more epochs to achieve better results.
